@@ -3,9 +3,23 @@
 }
 
 body{
-
+    text-align: center;
 }
 
 h1{
     text-align: center;
+    transform: rotate(0);
+    transition: transform 0.1s;
+}
+
+.animation{
+    transform: rotate(180deg)!important;
+    transition: transform 0.1s;
+}
+
+.anim{
+    color: black;
+    font-size: 125%;
+    height: 25%;
+    width: 10%;
 }
