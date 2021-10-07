@@ -1,3 +1,4 @@
+code[class*=language-],pre[class*=language-]{color:#ccc;background:0 0;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}
 
 *{
     font-family: "Source code pro", Verdana, sans-serif;
@@ -28,6 +29,35 @@ h1{
 .content>div{
     text-align: center;
 }
+.title_GetEl, .title_GetEl2{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+.title_GetEl:hover, .title_GetEl2:hover{
+    color: orange;
+}
+.title_GetEl2{
+    margin-top: 200px;
+}
+.des_GetEl, .des_GetEl3{
+    text-align: center;
+}
+.des_GetEl3{
+    margin-bottom: 25px;
+}
+.code_lang pre, h5{
+    width: 75%;
+    margin: auto;
+}
+.code_lang pre{
+    margin-bottom: 30px;
+    font-size: 12px;
+
+}
+.code_lang h5{
+    margin-bottom: 5px;
+}
 .txt_lorem h3{
     padding-bottom: 10px;
 }
@@ -37,7 +67,8 @@ h1{
     width: 900px;
     height: auto;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding: 10px;
     background-color: #c2f8cb;
 }
@@ -47,11 +78,21 @@ h1{
 .txt_lorem:hover{
     box-shadow: 2px 2px 4px black;
 }
-.txt_lorem:hover p{
-    text-decoration: underline;
-}
 .btn_title{
     margin:auto;
+}
+.example{
+    text-align: center;
+    border: black inset 2px;
+    margin-top: 50px;
+    background-color: #c2f8cb;
+    width: 900px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+.example button{
+    margin-top: 10px;
 }
 .circle{
     margin: 40px;
