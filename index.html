@@ -8,7 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    <section></section>
+<div id="darkmode"> 
+    
     <h1 id="title">
         Apprentissage JS
     </h1>
@@ -18,6 +19,7 @@
                 Animation
             </button>
         </div>
+        <h2 class="h2_matou"> Le QuerySelectAll !!!</h2>
         <nav>
             <ul class="ul">
                 <li class="li" id="li_1">This is a</li>
@@ -25,17 +27,48 @@
                 <li class="li" id="li_3">with a CSS Hover </li>
             </ul>
         </nav>
+        <p class="p_matou">Le QuerySelectorAll nous permet de selectionner n'importe quel groupe d'éléments 
+            (dans notre cas des balises "li"), <br>
+            pour leurs donner des instructions à l'aide d'un "for each". Ici, nous cherchons à créer 
+            un effet hover sur les "ul li" de la nav bar.</p>
+        <pre><code class="language-js">var li = document.querySelectorAll("li")li.forEach((e)=>{
+            e.addEventListener('mouseover', f => {
+            e.classList.toggle("li-hover")
+            })
+        })
+        li.forEach((e)=>{
+            e.addEventListener('mouseout', f => {
+            e.classList.toggle("li-hover")
+            })
+        })</code></pre>
+        <h2 class="h2_matou"> Le Dark Mode !!!</h2>
+        <button id="darkbutton"> Dark Mode</button> 
+        <p class="p_matou">La fonction addEventListener "onclick" permet de créer un évennement
+            après un clique sur le bouton "dark mode". Une div (id="darkmode") est crée sous le body, pour nous permettre de modifier 
+            le style de l'ensemble du document. 
+            La fonction "classList" permet de créer 
+            une nouvelle class dans la div darkmode (html) cette class est également assignée en CSS, cette nouvelle class sera supprimée de la div avec la fonction "toggle" après un nouveau clique sur le bouton Dark Mode.
+            
+        </p>
+        <pre><code class="language-js">var darkmode = document.getElementById("darkmode") 
+var darkbutton = document.getElementById("darkbutton")
+darkbutton.addEventListener('click', e=>{
+    darkmode.classList.toggle("darkmode")
+})</code></pre> 
+<pre><code class="language-html">&lt;div id="darkmode"> &lt;div></code></pre> 
+<pre><code class="language-html">&lt;div id="darkmode" class="darkmode"> &lt;div></code></pre> 
+<pre><code class="language-css">.darkmode{
+    background-color: gray;
+    color:cornsilk;}</code></pre> 
+
     </div>
     <div class="losange" id="losange"></div>
     <div class="circle" id="circle"></div>
-<<<<<<< Updated upstream
     <div class="square"><h2 class="lettre">Square</h2></div>
-=======
     <img class="img_lightgreen" id="img_lightgreen" src="img/img_lightgreen.jpg" alt="image with green abstrait art" onclick="change_img()">
     <img class="img_lightpink" id="img_lightpink" src="img/img_lightpink.png" alt="image with pink abstrait art" onclick="change_img_back()">
         
->>>>>>> Stashed changes
     <script type="text/javascript" src="script.js"></script>
-
+</div>
 </body>
 </html>
