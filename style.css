@@ -12,7 +12,11 @@ h1{
     transition: transform 0.1s;
     padding: 20px;
 }
-
+button{
+    background-color: darkgrey;
+    height: 45px;
+    width: 150px;
+}
 .animation{
     transform: rotate(180deg)!important;
     transition: transform 0.1s;
@@ -75,7 +79,7 @@ h1{
 }
 
 .li-hover{
-    background-color: rgb(131, 96, 163);
+    background-color:cadetblue;
     color: cornsilk;
     border: none;
 }
@@ -129,15 +133,24 @@ color:blue
 }
 .darkmode{
     background-color: gray;
-    color:burlywood;
+    color:cornsilk;
 }
 #darkbutton{
     width: 170px;
     height: 50px;
     color: white;
     background-color: black;
+    align-items: center;
 }
 .h2_matou{
     padding: 30px;
     text-align: center;
+}
+.p_matou{
+    text-align: center;
+    background-color: cadetblue;
+    color:cornsilk;
+    height: 60px;
+    padding-top: 10px;
+    margin-top: 10px;
 }

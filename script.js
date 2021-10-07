@@ -32,6 +32,7 @@ li.forEach((e)=>{
     e.classList.toggle("li-hover")
   })
 })
+
 li.forEach((e)=>{
   e.addEventListener('mouseout', f => {
     e.classList.toggle("li-hover")

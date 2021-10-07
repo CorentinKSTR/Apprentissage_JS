@@ -27,7 +27,30 @@
                 <li class="li" id="li_3">with a CSS Hover </li>
             </ul>
         </nav>
-        <button id="darkbutton"> Dark Mode</button>  
+        <p class="p_matou">Le QuerySelectorAll nous permet de selectionner n'importe quel groupe d'éléments (dans notre cas des balises "li"), <br>
+            pour leurs donner des instructions à l'aide d'un "for each". Ici, nous cherchons à créer un effet hover sur les "ul li" de la nav bar.</p>
+        <pre><code class="language-js">var li = document.querySelectorAll("li")li.forEach((e)=>{
+            e.addEventListener('mouseover', f => {
+            e.classList.toggle("li-hover")
+            })
+        })
+        li.forEach((e)=>{
+            e.addEventListener('mouseout', f => {
+            e.classList.toggle("li-hover")
+            })
+        })</code></pre>
+        <button id="darkbutton"> Dark Mode</button> 
+        <p class="p_matou">Le QuerySelectorAll nous permet de selectionner n'importe quel groupe d'éléments (dans notre cas des balises "li"), <br>
+            pour leurs donner des instructions à l'aide d'un "for each". Ici, nous cherchons à créer un effet hover sur les "ul li" de la nav bar.</p>
+        <pre><code class="language-js">var darkmode = document.getElementById("darkmode") 
+var darkbutton = document.getElementById("darkbutton")
+darkbutton.addEventListener('click', e=>{
+    darkmode.classList.toggle("darkmode")
+})</code></pre> 
+<pre><code class="language-css">.darkmode{
+    background-color: gray;
+    color:cornsilk;
+}</code></pre> 
     </div>
     <div class="losange" id="losange"></div>
     <div class="circle" id="circle"></div>
@@ -36,7 +59,6 @@
     <img class="img_lightpink" id="img_lightpink" src="img/img_lightpink.png" alt="image with pink abstrait art" onclick="change_img_back()">
         
     <script type="text/javascript" src="script.js"></script>
-    <pre><code class="language-html">&lt;h1>on est al &lt;/h1></code></pre>
 </div>
 </body>
 </html>
