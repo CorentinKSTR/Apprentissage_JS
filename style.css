@@ -51,13 +51,14 @@ h1{
     animation-name: losange_changing_colors;
     animation-duration: 4s;
 }
+.img_lightpink{
+    display: none;
+}
 
 .li{
     justify-content: flex-start;
 }
-#li_1{
 
-}
 @keyframes losange_changing_colors {
     0%  {background-color: lightgreen;}
     25%   {background-color: lightyellow;}
