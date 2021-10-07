@@ -19,6 +19,16 @@ function change_img_back(){
     img_lightpink.style.display = "none"
     img_lightgreen.style.display = "block"
 }
+function Button2() {
+  document.getElementById("if").innerHTML = "Lorem Ipsum";
+}
+function Button3() {
+  var x = document.getElementsByClassName("p_OnEstLa");
+  x[0].innerHTML = "Hello World!";
+}
+function Button3() {
+  document.querySelector(".example").style.backgroundColor = "red";
+}
 var darkmode = document.getElementById("darkmode")
 var darkbutton = document.getElementById("darkbutton")
 var li = document.querySelectorAll("li")
