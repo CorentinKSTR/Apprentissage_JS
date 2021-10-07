@@ -13,3 +13,10 @@ function change_img_back(){
     img_lightpink.style.display = "none"
     img_lightgreen.style.display = "block"
 }
+function Button() {
+  document.getElementById("if").innerHTML = "pierre t'es belle";
+}
+function Button2() {
+  var x = document.getElementsByClassName("p_OnEstLa");
+  x[0].innerHTML = "Hello World!";
+}
