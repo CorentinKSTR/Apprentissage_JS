@@ -1,5 +1,8 @@
 *{
     font-family: "Source code pro", Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -25,7 +28,7 @@ h1{
 }
 
 
-.circle3{
+.circle{
     margin: 40px;
     background-color: lightsalmon;
     height: 300px;
@@ -34,10 +37,11 @@ h1{
     transition-timing-function: ease-in-out;
     transition: 2s;
 }
-.circle3:hover{
+.circle:hover{
     width: 800px;
     border-radius: 0;
 }
+
 .losange{
     margin: 60px;
     background-color: whitesmoke;
