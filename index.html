@@ -26,6 +26,10 @@
             </ul>
         </nav>
     </div>
+    <h2 class="title_GetEl">getElementById</h2>
+    <p class="des_GetEl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque dolor libero vitae consectetur molestiae exercitationem quibusdam iure inventore a modi. Molestias sit quia, quibusdam accusantium sunt eum autem sint atque?
+    </p>
+
     <div class="txt_lorem">
         <h3>Lorem in ze binks</h3>
         <p id="if">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
@@ -36,6 +40,46 @@
         , eum ex possimus nulla, debitis porro fugiat alias laborum mollitia unde tempore illo at nam facere! Id maiores necessitatibus voluptatum at!</p>
         <button onclick="Button2()">getElementById</button>
     </div>
+
+<!-- CODE -->
+    <pre><code class="language-markup">&lt;div class="txt_lorem">
+        &lt;h3>Lorem in ze binks&lt;/h3>
+        &lt;p id="if">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+        , eum ex possimus nulla, debitis porro fugiat alias laborum mollitia unde tempore illo at nam facere! Id maiores necessitatibus voluptatum at!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+        , eum ex possimus nulla, debitis porro fugiat alias laborum mollitia unde tempore illo at nam facere! Id maiores necessitatibus voluptatum at!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+        , eum ex possimus nulla, debitis porro fugiat alias laborum mollitia unde tempore illo at nam facere! Id maiores necessitatibus voluptatum at!&lt;/p>
+        &lt;button onclick="Button2()">getElementById&lt;/button>
+        &lt;/div></code></pre>
+
+
+    <pre><code class="language-css">.txt_lorem h3{
+        padding-bottom: 10px;
+    }
+    .txt_lorem, .txt_lorem2 {
+        border: 2px inset black;
+        text-align: center;
+        width: 900px;
+        height: auto;
+        margin: auto;
+        margin-top: 100px;
+        padding: 10px;
+        background-color: #c2f8cb;
+    }
+    .txt_lorem button{
+        margin-top: 20px;
+    }
+    .txt_lorem:hover{
+        box-shadow: 2px 2px 4px black;
+    }</code></pre>
+
+    <pre><code class="language-js">function Button2() {
+        document.getElementById("if").innerHTML = "pierre t'es belle";
+      }</code> </pre>
+    <!-- FIN CODE -->
+
+
     <div class="txt_lorem2">
     
         <h3>Lorem in ze binks</h3>
