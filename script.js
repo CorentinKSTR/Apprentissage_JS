@@ -38,3 +38,14 @@ li.forEach((e)=>{
     e.classList.toggle("li-hover")
   })
 })
+
+
+var element = document.getElementById("imagerotate").animate([
+  { 
+      transform: "rotate(360deg)" 
+      
+  }
+], {
+  duration: 5000,
+  iterations: Infinity
+});

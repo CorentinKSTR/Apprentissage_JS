@@ -10,6 +10,13 @@
 <body>
 <div id="darkmode"> 
     
+    <section></section>
+
+
+    <p>
+        Un bouton qui fait pivoter un element au clic
+    </p>
+
     <h1 id="title">
         Apprentissage JS
     </h1>
@@ -60,12 +67,66 @@ darkbutton.addEventListener('click', e=>{
 <pre><code class="language-css">.darkmode{
     background-color: gray;
     color:cornsilk;}</code></pre> 
+    
+        <p>
+            Html
+        </p>
 
+
+        <pre><code class="language-html">
+        &lt;h1 id="title">
+            Apprentissage JS
+        &lt;/h1>
+        &lt;div class="content">
+            &lt;div>
+                &lt;button class="anim" onclick="Button()">
+                    Animation
+                &lt;/button>
+            &lt;/div>
+        &lt;/div></code></pre>
+
+        <p>
+            CSS
+        </p>
+
+        <pre><code class="language-css">
+            .animation{
+                transform: rotate(180deg)!important;
+                transition: transform 0.1s;
+            }</code></pre>
+        
+
+        <p>
+            javascript
+        </p>
+
+        <pre><code class="language-js">
+            function Button(){
+                document.getElementById("title").classList.toggle("animation")
+              }</code></pre>
+
+        <p>
+            Explication
+        </p>
+
+        <pre><code class="language-html">
+            Pour cette animation, on injecte une classe css dans une balise html, 
+            Grace au js, on récupere l'Id de notre titre "title" avec :
+            "document.getElementById("title")" 
+            cela nous permet d'envoyer la class "animation" avec le js :
+            ".classList.toggle("animation")"
+            Dans cet exemple, la classe "animation" contient l'element 
+            "transform: rotate(180deg)!important;" avec un delai de 0,1s : "transition: transform 0.1s;"
+        </code></pre>
 
         <div id="idimg">
-            <img src="img/jsimage.png">
+            <img id="imagehover" src="img/jsimage.png">
+            <br>
+            <img id="imagerotate" src="img/css.png">
 
         </div>
+
+
 
     </div>
     <div class="losange" id="losange"></div>
