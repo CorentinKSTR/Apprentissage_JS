@@ -52,12 +52,25 @@ h1{
     animation-duration: 4s;
 }
 
+.ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
 .li{
-    justify-content: flex-start;
+    height: 50px;
+    width: 170px;
+    margin: 20px;
+    border: solid 2px black;
+    text-align: center;
+    padding-top: 10px;
 }
-#li_1{
+.li:hover{
+    background-color: rgb(131, 96, 163);
+    color: cornsilk;
+    border: none;
+}
 
-}
 @keyframes losange_changing_colors {
     0%  {background-color: lightgreen;}
     25%   {background-color: lightyellow;}
