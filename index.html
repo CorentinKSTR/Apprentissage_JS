@@ -75,8 +75,59 @@
             "transform: rotate(180deg)!important;" avec un delai de 0,1s : "transition: transform 0.1s;"
         </code></pre>
 
+
+        <p>
+            Une image qui change de comportement au survolage de la souris
+        </p>
+
         <div id="idimg">
             <img id="imagehover" src="img/jsimage.png">
+
+
+            <p>
+                Html
+            </p>
+
+            <pre><code class="language-html">
+                &lt;div id="idimg">
+                    &lt;img id="imagehover" src="img/jsimage.png">
+                &lt;/div>
+            </code></pre>
+
+            <p>
+                CSS
+            </p>
+
+            <pre><code class="language-css">
+            #imagehover{
+                -webkit-filter: grayscale(100%);
+                margin-top: 5%;
+                width: 15%;
+                height: 15%;
+                transition: width 1s, height 1s, transform 1s;
+            }
+            
+            #imagehover:hover{
+                -webkit-filter: grayscale(0%);
+                width: 25%;
+                height: 25%;
+                transform: rotate(360deg);
+            }
+            </code></pre>
+
+            <p>
+                Explication
+            </p>
+    
+            <pre><code class="language-html">
+                Cette animation n'a pas besoins de javascript, 
+                tout se passe en CSS lorsqu'on passe la souris sur l'element avec l'atribu ":hover"
+                "-webkit-filter: grayscale(100%);" permet de mettre l'image en noir et blanc
+                "-webkit-filter: grayscale(0%);" permet de la remettre en couleur
+                "transition: width 1s, height 1s, transform 1s;" permet de gerer le délais de l'animation (taille, rotation)
+
+            </code></pre>
+
             <br>
             <img id="imagerotate" src="img/css.png">
 
