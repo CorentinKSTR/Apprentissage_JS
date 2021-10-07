@@ -49,3 +49,13 @@ var element = document.getElementById("imagerotate").animate([
   duration: 5000,
   iterations: Infinity
 });
+
+var element = document.getElementById("imagerotate").animate([
+  { 
+      transform: "rotate(360deg)" 
+      
+  }
+], {
+  duration: 5000,
+  iterations: Infinity
+});

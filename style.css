@@ -167,6 +167,16 @@ color:blue
     height: 15%;
     transition: width 1s, height 1s, transform 1s;
 }
+#idimg{
+    text-align: center;
+}
+#imagehover{
+    -webkit-filter: grayscale(100%);
+    margin-top: 5%;
+    width: 15%;
+    height: 15%;
+    transition: width 1s, height 1s, transform 1s;
+}
 
 #imagehover:hover{
     -webkit-filter: grayscale(0%);

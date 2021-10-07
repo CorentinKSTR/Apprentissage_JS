@@ -220,6 +220,158 @@ darkbutton.addEventListener('click', e=>{
 
         </code></pre>
 
+    
+        <p>
+            Html
+        </p>
+
+        <pre><code class="language-html">
+        &lt;h1 id="title">
+            Apprentissage JS
+        &lt;/h1>
+        &lt;div class="content">
+            &lt;div>
+                &lt;button class="anim" onclick="Button()">
+                    Animation
+                &lt;/button>
+            &lt;/div>
+        &lt;/div></code></pre>
+
+        <p>
+            CSS
+        </p>
+
+        <pre><code class="language-css">
+            .animation{
+                transform: rotate(180deg)!important;
+                transition: transform 0.1s;
+            }</code></pre>
+        
+
+        <p>
+            javascript
+        </p>
+
+        <pre><code class="language-js">
+            function Button(){
+                document.getElementById("title").classList.toggle("animation")
+              }</code></pre>
+
+        <p>
+            Explication
+        </p>
+
+        <pre><code class="language-html">
+            Pour cette animation, on injecte une classe css dans une balise html, 
+            Grace au js, on récupere l'Id de notre titre "title" avec :
+            "document.getElementById("title")" 
+            cela nous permet d'envoyer la class "animation" avec le js :
+            ".classList.toggle("animation")"
+            Dans cet exemple, la classe "animation" contient l'element 
+            "transform: rotate(180deg)!important;" avec un delai de 0,1s : "transition: transform 0.1s;"
+        </code></pre>
+
+
+        <p>
+            Une image qui change de comportement au survolage de la souris
+        </p>
+
+        <div id="idimg">
+            <img id="imagehover" src="img/jsimage.png">
+        </div>
+
+            <p>
+                Html
+            </p>
+
+            <pre><code class="language-html">
+                &lt;div id="idimg">
+                    &lt;img id="imagehover" src="img/jsimage.png">
+                &lt;/div>
+            </code></pre>
+
+            <p>
+                CSS
+            </p>
+
+            <pre><code class="language-css">
+            #imagehover{
+                -webkit-filter: grayscale(100%);
+                margin-top: 5%;
+                width: 15%;
+                height: 15%;
+                transition: width 1s, height 1s, transform 1s;
+            }
+            
+            #imagehover:hover{
+                -webkit-filter: grayscale(0%);
+                width: 25%;
+                height: 25%;
+                transform: rotate(360deg);
+            }
+            </code></pre>
+
+            <p>
+                Explication
+            </p>
+    
+            <pre><code class="language-html">
+                Cette animation n'a pas besoins de javascript, 
+                tout se passe en CSS lorsqu'on passe la souris sur l'element avec l'atribu ":hover"
+                "-webkit-filter: grayscale(100%);" permet de mettre l'image en noir et blanc
+                "-webkit-filter: grayscale(0%);" permet de la remettre en couleur
+                "transition: width 1s, height 1s, transform 1s;" permet de gerer le délais de l'animation (taille, rotation)
+
+            </code></pre>
+
+            <p>
+                Une image qui tourne en boucle
+            </p>
+
+        <div id="idimg">
+            <img id="imagerotate" src="img/css.png">
+        </div>
+
+
+        <p>
+            Html
+        </p>
+
+        <pre><code class="language-html">
+            &lt;div id="idimg">
+                &lt;img id="imagerotate" src="img/css.png">
+            &lt;/div>
+        </code></pre>
+
+        <p>
+            javascript
+        </p>
+
+        <pre><code class="language-js">
+            var element = document.getElementById("imagerotate").animate([
+                {      
+                    transform: "rotate(360deg)" 
+                }
+            ], {
+                duration: 5000,
+                iterations: Infinity
+            });</code></pre>
+
+        <p>
+            Explication
+        </p>
+
+        <pre><code class="language-html">
+            
+            Pour cette animation, on recupère l'Id de l'image avec :
+            "document.getElementById("imagerotate")" Ensuite on applique une animation :
+            "animate([{transform: "rotate(360deg)" }"
+            dans ce cas, c'est une rotation de 360°, et a la fin du code, 
+            on mets la durée de rotation ainsi que le nombre de répetition
+            "{duration: 5000,iterations: Infinity});"
+
+        </code></pre>
+
     </div>
     <div class="losange" id="losange"></div>
     <div class="circle" id="circle"></div>
