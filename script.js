@@ -20,7 +20,7 @@ function change_img_back(){
     img_lightgreen.style.display = "block"
 }
 function Button2() {
-  document.getElementById("if").innerHTML = "pierre t'es belle";
+  document.getElementById("if").innerHTML = "Lorem Ipsum";
 }
 function Button3() {
   var x = document.getElementsByClassName("p_OnEstLa");
