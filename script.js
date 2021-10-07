@@ -26,3 +26,6 @@ function Button3() {
   var x = document.getElementsByClassName("p_OnEstLa");
   x[0].innerHTML = "Hello World!";
 }
+function Button3() {
+  document.querySelector(".example").style.backgroundColor = "red";
+}
