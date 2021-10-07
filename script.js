@@ -29,3 +29,22 @@ function Button3() {
 function Button3() {
   document.querySelector(".example").style.backgroundColor = "red";
 }
+var darkmode = document.getElementById("darkmode")
+var darkbutton = document.getElementById("darkbutton")
+var li = document.querySelectorAll("li")
+
+darkbutton.addEventListener('click', e=>{
+  darkmode.classList.toggle("darkmode")
+})
+
+li.forEach((e)=>{
+  e.addEventListener('mouseover', f => {
+    e.classList.toggle("li-hover")
+  })
+})
+
+li.forEach((e)=>{
+  e.addEventListener('mouseout', f => {
+    e.classList.toggle("li-hover")
+  })
+})
