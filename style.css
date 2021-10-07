@@ -16,15 +16,18 @@ h1{
     transform: rotate(180deg)!important;
     transition: transform 0.1s;
 }
-
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
 .anim{
     color: black;
     font-size: 125%;
-    height: 25%;
-    width: 10%;
 }
-
-
+.content>div{
+    text-align: center;
+}
 .circle{
     margin: 40px;
     background-color: lightsalmon;
@@ -48,12 +51,7 @@ h1{
     animation-name: losange_changing_colors;
     animation-duration: 4s;
 }
-.content{
-    display: flex;
-    background-color: aqua;
-    flex-direction: column;
-    justify-content: center;
-}
+
 .li{
     justify-content: flex-start;
 }
