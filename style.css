@@ -58,3 +58,32 @@ h1{
     75%  {background-color: lightskyblue;}
     100% {background-color: whitesmoke;}
 }
+
+.square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin:10px;
+    border-radius:25px;
+    background-color:red;
+    animation-name: square;
+    animation-duration: 6s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+  }
+  
+  @keyframes square {
+      0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+    50% {width: 1000px;}
+  }
+  
+  .square:hover {
+    background-color: yellow;
+  }
+  .texte{
+      text-align:center;
+  }
