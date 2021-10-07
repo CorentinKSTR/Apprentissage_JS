@@ -38,3 +38,19 @@ h1{
     width: 800px;
     border-radius: 0;
 }
+.losange{
+    margin: 60px;
+    background-color: whitesmoke;
+    height: 260px;
+    width: 260px;
+    transform: rotate(45deg);
+    animation-name: losange_changing_colors;
+    animation-duration: 4s;
+}
+@keyframes losange_changing_colors {
+    0%  {background-color: lightgreen;}
+    25%   {background-color: lightyellow;}
+    50%  {background-color: lightgreen;}
+    75%  {background-color: lightskyblue;}
+    100% {background-color: whitesmoke;}
+}
