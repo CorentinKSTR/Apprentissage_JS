@@ -10,8 +10,13 @@ h1{
     text-align: center;
     transform: rotate(0);
     transition: transform 0.1s;
+    padding: 20px;
 }
-
+button{
+    background-color: darkgrey;
+    height: 45px;
+    width: 150px;
+}
 .animation{
     transform: rotate(180deg)!important;
     transition: transform 0.1s;
@@ -66,19 +71,35 @@ h1{
     display: none;
 }
 
+.ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
 .li{
-    justify-content: flex-start;
+    height: 50px;
+    width: 170px;
+    margin: 20px;
+    border: solid 2px black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.li-hover{
+    background-color:cadetblue;
+    color: cornsilk;
+    border: none;
 }
 
 
-
 .square {
-    width: 100px;
+    width: 160px;
     height: 100px;
-    border: 1px solid black;
     margin:10px;
+    color: lightsalmon;
+    text-align: center;
     border-radius:25px;
-    background-color:red;
+    background-color:bisque;
     animation-name: square;
     animation-duration: 6s;
     animation-iteration-count: 2;
@@ -91,12 +112,41 @@ h1{
     50%  {background-color:blue; left:200px; top:200px;}
     75%  {background-color:green; left:0px; top:200px;}
     100% {background-color:red; left:0px; top:0px;}
-    50% {width: 1000px;}
+    0%   {color:yellow; left:0px; top:0px;}
+    25%  {color:blue; left:200px; top:0px;}
+    50%  {color:red; left:200px; top:200px;}
+    75%  {color:yellow; left:0px; top:200px;}
+    100% {color:blue; left:0px; top:0px;}
+    50% {width: 100%;}
 }
 
 .square:hover {
 background-color: yellow;
+color:blue
 }
 .texte{
     text-align:center;
+}
+.darkmode{
+    background-color: gray;
+    color:cornsilk;
+}
+#darkbutton{
+    width: 170px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    align-items: center;
+}
+.h2_matou{
+    padding: 30px;
+    text-align: center;
+}
+.p_matou{
+    text-align: center;
+    background-color: cadetblue;
+    color:cornsilk;
+    height: 80px;
+    padding-top: 10px;
+    margin-top: 10px;
 }

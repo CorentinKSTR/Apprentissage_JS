@@ -19,3 +19,22 @@ function change_img_back(){
     img_lightpink.style.display = "none"
     img_lightgreen.style.display = "block"
 }
+var darkmode = document.getElementById("darkmode")
+var darkbutton = document.getElementById("darkbutton")
+var li = document.querySelectorAll("li")
+
+darkbutton.addEventListener('click', e=>{
+  darkmode.classList.toggle("darkmode")
+})
+
+li.forEach((e)=>{
+  e.addEventListener('mouseover', f => {
+    e.classList.toggle("li-hover")
+  })
+})
+
+li.forEach((e)=>{
+  e.addEventListener('mouseout', f => {
+    e.classList.toggle("li-hover")
+  })
+})
