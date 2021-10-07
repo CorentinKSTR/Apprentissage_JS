@@ -29,6 +29,30 @@ h1{
 .content>div{
     text-align: center;
 }
+.title_GetEl, .title_GetEl2{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+.title_GetEl:hover, .title_GetEl2:hover{
+    color: orange;
+}
+.title_GetEl2{
+    margin-top: 200px;
+}
+.des_GetEl{
+    text-align: center;
+}
+.code_lang pre, h5{
+    width: 75%;
+    margin: auto;
+}
+.code_lang pre{
+    margin-bottom: 30px;
+}
+.code_lang h5{
+    margin-bottom: 5px;
+}
 .txt_lorem h3{
     padding-bottom: 10px;
 }
@@ -38,7 +62,8 @@ h1{
     width: 900px;
     height: auto;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding: 10px;
     background-color: #c2f8cb;
 }
