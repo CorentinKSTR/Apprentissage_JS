@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-<div id="darkmode"> 
-    
-
-    <section class="code_lang">
-    <h2 class="h2_matou">
-        Un bouton qui fait pivoter un element au clic
-    </h2>
-
-    <h1 id="title">
-        Apprentissage JS
-    </h1>
-    <div class="content">
-        <div>
-            <button class="anim" onclick="Button()">
-                Animation
-            </button>
-        </div>
-
-        <h5>
-            Html
-        </h5>
+    <div id="darkmode">
 
 
-        <pre><code class="language-html">
+        <section class="code_lang">
+            <h2 class="h2_matou">
+                Un bouton qui fait pivoter un element au clic
+            </h2>
+
+            <h1 id="title">
+                Apprentissage JS
+            </h1>
+            <div class="content">
+                <div>
+                    <button class="anim" onclick="Button()">
+                        Animation
+                    </button>
+                </div>
+
+                <h5>
+                    Html
+                </h5>
+
+
+                <pre><code class="language-html">
         &lt;h1 id="title">
             Apprentissage JS
         &lt;/h1>
@@ -43,31 +45,31 @@
             &lt;/div>
         &lt;/div></code></pre>
 
-        <h5>
-            CSS
-        </h5>
+                <h5>
+                    CSS
+                </h5>
 
-        <pre><code class="language-css">
+                <pre><code class="language-css">
             .animation{
                 transform: rotate(180deg)!important;
                 transition: transform 0.1s;
             }</code></pre>
-        
 
-        <h5>
-            javascript
-        </h5>
 
-        <pre><code class="language-js">
+                <h5>
+                    javascript
+                </h5>
+
+                <pre><code class="language-js">
             function Button(){
                 document.getElementById("title").classList.toggle("animation")
             }</code></pre>
 
-        <h5>
-            Explication
-        </h5>
+                <h5>
+                    Explication
+                </h5>
 
-        <pre><code class="language-html">
+                <pre><code class="language-html">
             Pour cette animation, on injecte une classe css dans une balise html, 
             Grace au js, on récupere l'Id de notre titre "title" avec :
             "document.getElementById("title")" 
@@ -77,6 +79,7 @@
             "transform: rotate(180deg)!important;" avec un delai de 0,1s : "transition: transform 0.1s;"
         </code></pre>
 
+<<<<<<< HEAD
     </section>
     <!------------------------- Matis ------------------------------->
     <section class="code_lang">
@@ -95,6 +98,25 @@
             un effet hover sur les "ul li" de la nav bar.</p>
         <pre><code class="language-js">js
             var li = document.querySelectorAll("li")li.forEach((e)=>{
+=======
+        </section>
+
+        <section class="code_lang">
+
+            <h2 class="h2_matou"> Le QuerySelectAll !!!</h2>
+            <nav>
+                <ul class="ul">
+                    <li class="li" id="li_1">This is a</li>
+                    <li class="li" id="li_2">nav ul li</li>
+                    <li class="li" id="li_3">with a CSS Hover </li>
+                </ul>
+            </nav>
+            <p class="p_matou">Le QuerySelectorAll nous permet de selectionner n'importe quel groupe d'éléments
+                (dans notre cas des balises "li"), <br>
+                pour leurs donner des instructions à l'aide d'un "for each". Ici, nous cherchons à créer
+                un effet hover sur les "ul li" de la nav bar.</p>
+            <pre><code class="language-js">var li = document.querySelectorAll("li")li.forEach((e)=>{
+>>>>>>> main
             e.addEventListener('mouseover', f => {
             e.classList.toggle("li-hover")
             })
@@ -105,6 +127,7 @@
             })
         })</code></pre>
 
+<<<<<<< HEAD
     </section>
     <section class="code_lang">
         <h2 class="h2_matou"> Le Dark Mode !!!</h2>
@@ -128,21 +151,45 @@ darkbutton.addEventListener('click', e=>{
     &lt;div id="darkmode" class="darkmode"> &lt;div></code></pre> 
 <pre><code class="language-css"> css 
     .darkmode{
+=======
+        </section>
+        <section class="code_lang">
+            <h2 class="h2_matou"> Le Dark Mode !!!</h2>
+            <button id="darkbutton"> Dark Mode</button>
+            <p class="p_matou">La fonction addEventListener "onclick" permet de créer un évennement
+                après un clique sur le bouton "dark mode". Une div (id="darkmode") est crée sous le body, pour nous
+                permettre de modifier
+                le style de l'ensemble du document.
+                La fonction "classList" permet de créer
+                une nouvelle class dans la div darkmode (html) cette class est également assignée en CSS, cette nouvelle
+                class sera supprimée de la div avec la fonction "toggle" après un nouveau clique sur le bouton Dark
+                Mode.
+
+            </p>
+            <pre><code class="language-js">var darkmode = document.getElementById("darkmode") 
+var darkbutton = document.getElementById("darkbutton")
+darkbutton.addEventListener('click', e=>{
+    darkmode.classList.toggle("darkmode")
+})</code></pre>
+            <pre><code class="language-html">&lt;div id="darkmode"> &lt;div></code></pre>
+            <pre><code class="language-html">&lt;div id="darkmode" class="darkmode"> &lt;div></code></pre>
+            <pre><code class="language-css">.darkmode{
+>>>>>>> main
     background-color: gray;
-    color:cornsilk;}</code></pre> 
-    
-        
-</section>
+    color:cornsilk;}</code></pre>
 
-<section class="code_lang">
 
-        <h2 class="h2_matou"p>
-            Une image qui change de comportement au survolage de la souris
-        </h2>
+        </section>
 
-        <div id="idimg">
-            <img id="imagehover" src="img/jsimage.png">
-        </div>
+        <section class="code_lang">
+
+            <h2 class="h2_matou" p>
+                Une image qui change de comportement au survolage de la souris
+            </h2>
+
+            <div id="idimg">
+                <img id="imagehover" src="img/jsimage.png">
+            </div>
 
             <h5>
                 Html
@@ -179,7 +226,7 @@ darkbutton.addEventListener('click', e=>{
             <h5>
                 Explication
             </h5>
-    
+
             <pre><code class="language-html">
                 Cette animation n'a pas besoins de javascript, 
                 tout se passe en CSS lorsqu'on passe la souris sur l'element avec l'atribu ":hover"
@@ -196,26 +243,26 @@ darkbutton.addEventListener('click', e=>{
                 Une image qui tourne en boucle
             </h2>
 
-        <div id="idimg">
-            <img id="imagerotate" src="img/css.png">
-        </div>
+            <div id="idimg">
+                <img id="imagerotate" src="img/css.png">
+            </div>
 
 
-        <h5>
-            Html
-        </h5>
+            <h5>
+                Html
+            </h5>
 
-        <pre><code class="language-html">
+            <pre><code class="language-html">
             &lt;div id="idimg">
                 &lt;img id="imagerotate" src="img/css.png">
             &lt;/div>
         </code></pre>
 
-        <h5>
-            javascript
-        </h5>
+            <h5>
+                javascript
+            </h5>
 
-        <pre><code class="language-js">
+            <pre><code class="language-js">
             var element = document.getElementById("imagerotate").animate([
                 {      
                     transform: "rotate(360deg)" 
@@ -225,11 +272,11 @@ darkbutton.addEventListener('click', e=>{
                 iterations: Infinity
             });</code></pre>
 
-        <h5>
-            Explication
-        </h5>
+            <h5>
+                Explication
+            </h5>
 
-        <pre><code class="language-html">
+            <pre><code class="language-html">
             
             Pour cette animation, on recupère l'Id de l'image avec :
             "document.getElementById("imagerotate")" Ensuite on applique une animation :
@@ -240,37 +287,40 @@ darkbutton.addEventListener('click', e=>{
 
         </code></pre>
 
-    </section>
+        </section>
 
 
     </div>
 
     <!--------------------------------------- Adam ---------------------------------->
     
+    <!-- GetElementById -->
     <h2 class="title_GetEl">getElementById()</h2>
-    <p class="des_GetEl">La méthode getElementById() de Document renvoie un objet Element représentant l'élément dont la propriété id correspond à la chaîne de caractères spécifiée.
+    <p class="des_GetEl">La méthode getElementById() de Document renvoie un objet Element représentant l'élément dont la
+        propriété id correspond à la chaîne de caractères spécifiée.
     </p>
 
     <div class="txt_lorem">
         <h3>Exemple</h3>
         <p id="if">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-        , eum ex possimus nulla, debitis porro fugiat alias laborum mollitia unde tempore illo at nam facere! Id maiores necessitatibus voluptatum at!
+            , eum ex possimus nulla, debitis porro fugiat alias laborum mollitia unde tempore illo at nam facere! Id
+            maiores necessitatibus voluptatum at!
         </p>
         <button onclick="Button2()">getElementById</button>
     </div>
 
-<!-- CODE -->
-<section class="code_lang">
-<h5>HTML</h5>
-    <pre><code class="language-markup">&lt;div class="txt_lorem">
+    <!-- CODE -->
+    <section class="code_lang">
+        <h5>HTML</h5>
+        <pre><code class="language-markup">&lt;div class="txt_lorem">
         &lt;h3>Exemple&lt;/h3>
         &lt;p id="if">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
         , eum ex possimus nulla, debitis porro fugiat alias laborum mollitia unde tempore illo at nam facere! Id maiores necessitatibus voluptatum at!&lt;/p>
         &lt;button onclick="Button2()">getElementById&lt;/button>
         &lt;/div></code></pre>
-    
+
         <h5>CSS</h5>
-    <pre><code class="language-css">.txt_lorem h3{
+        <pre><code class="language-css">.txt_lorem h3{
         padding-bottom: 10px;
     }
     .txt_lorem, .txt_lorem2 {
@@ -289,34 +339,39 @@ darkbutton.addEventListener('click', e=>{
     .txt_lorem:hover{
         box-shadow: 2px 2px 4px black;
     }</code></pre>
-    <h5>JS</h5>
-    <pre><code class="language-js">function Button2() {
+        <h5>JS</h5>
+        <pre><code class="language-js">function Button2() {
         document.getElementById("if").innerHTML = "Lorem ipsum";
     }</code> </pre>
     </section>
     <!-- FIN CODE -->
 
+    <!-- GetElementByClassName -->
     <h2 class="title_GetEl2">getElementByClassName()</h2>
-    <p class="des_GetEl">La méthode getElementByClassName() est similaire à la fonction mise un peu plus haut, juste que ici, on utilise une Class et non un ID.
-    <p class="des_GetEl">La méthode getElementById() de Document renvoie un objet Element représentant l'élément dont la propriété id correspond à la chaîne de caractères spécifiée.
-    </p>
-    <div class="txt_lorem2">
-    
-        <h3>Exemple</h3>
-        <p class="p_OnEstLa">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-        , eum ex possimus nulla, debitis porro fugiat alias laborum mollitia unde tempore illo at nam facere! Id maiores necessitatibus voluptatum at!
-        <button onclick="Button3()">getElementByClassName</button>
-    </div>
-    <section class="code_lang">
-        <h5>HTML</h5>
+    <p class="des_GetEl">La méthode getElementByClassName() est similaire à la fonction mise un peu plus haut, juste que
+        ici, on utilise une Class et non un ID.</p>
+        <p class="des_GetEl">La méthode getElementById() de Document renvoie un objet Element représentant l'élément
+            dont la propriété id correspond à la chaîne de caractères spécifiée.
+        </p>
+        <div class="txt_lorem2">
+
+            <h3>Exemple</h3>
+            <p class="p_OnEstLa">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+                , eum ex possimus nulla, debitis porro fugiat alias laborum mollitia unde tempore illo at nam facere! Id
+                maiores necessitatibus voluptatum at!
+                <button onclick="Button3()">getElementByClassName</button>
+        </div>
+        <section class="code_lang">
+            <h5>HTML</h5>
             <pre><code class="language-markup">&lt;h3>Exemple&lt;/h3>
             <pre><code class="language-markup">&lt;h3>Lorem in ze binks&lt;/h3>
                 &lt;p class="p_OnEstLa">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
                 , eum ex possimus nulla, debitis porro fugiat alias laborum mollitia unde tempore illo at nam facere! Id maiores necessitatibus voluptatum at!
                 &lt;button onclick="Button3()">getElementByClassName&lt;/button>
                 &lt;/div></code></pre>
-            
-                <h5>CSS</h5>
+            </code> </pre></section>
+            <section class="code_lang">
+            <h5>CSS</h5>
             <pre><code class="language-css">.txt_lorem h3{
                 padding-bottom: 10px;
             }
@@ -342,26 +397,27 @@ darkbutton.addEventListener('click', e=>{
                 var x = document.getElementsByClassName("p_OnEstLa");
                 x[0].innerHTML = "Hello World!";
             }</code> </pre>
-            </section>
-            
-            <h2 class="title_GetEl2">querySelector()</h2>
-            <p class="des_GetEl3"> La méthode querySelector() de l'interface Document retourne le premier Element dans le document correspondant au sélecteur.
-            </p>
+        </section>
 
-            <div class="example">
-                <h1>Exemple</h1>
-                <button class="btn_title" onclick="Button3()">Try it</button>
-            </div>
+        <h2 class="title_GetEl2">querySelector()</h2>
+        <p class="des_GetEl3"> La méthode querySelector() de l'interface Document retourne le premier Element dans le
+            document correspondant au sélecteur.
+        </p>
 
-            <section class="code_lang">
-                <h5>HTML</h5>
-                    <pre><code class="language-markup"></code>&lt;div class="example">
+        <div class="example">
+            <h1>Exemple</h1>
+            <button class="btn_title" onclick="Button3()">Try it</button>
+        </div>
+
+        <section class="code_lang">
+            <h5>HTML</h5>
+            <pre><code class="language-markup"></code>&lt;div class="example">
                         &lt;h1>Exemple&lt;/h1>
                         &lt;button class="btn_title" onclick="Button3()">Try it&lt;/button>
                         &lt;/div></code></pre>
-                    
-                        <h5>CSS</h5>
-                    <pre><code class="language-css">.example{
+
+            <h5>CSS</h5>
+            <pre><code class="language-css">.example{
                         text-align: center;
                         border: black inset 2px;
                         margin-top: 50px;
@@ -374,82 +430,85 @@ darkbutton.addEventListener('click', e=>{
 .example button{
                         margin-top: 10px;
                     }</code></pre>
-                    <h5>JS</h5>
-        
-                    <pre><code class="language-js">function Button3() {
+            <h5>JS</h5>
+
+            <pre><code class="language-js">function Button3() {
                         document.querySelector(".example").style.backgroundColor = "red";
                     }</code> </pre>
-                    </section>
+        </section>
 
 
-<!--------------------------------------- Fin Adam ---------------------------------->
+        <!--------------------------------------- Fin Adam ---------------------------------->
 
 <!--------------------------------------- Pierre ---------------------------------->
-
-                    <section class="code_lang">
-
         <div class="pierro">
-            <h2 class="title_GetEl"> Animer la couleur d'une div </h2>
-            <h2 class="title_GetEl">Refresh the page</h2>
-            <div class="losange" id="losange"></div>
-            <h5>html</h5>
-                <pre><code class="language-html">&lt;div class="losange">&lt;/div></code></pre>
-                <h5>css</h5>
-                <p>Le transform rotate sert à le changerr de position, c'est propriété est indépendant de l'animation car ce n'est pas une transition.
-                Ici le keyframe losange_changing_colors est l'animation qui est appelée juste au dessus et chaque pourcentage s'applique à la durée qui est de 4s. <br>
-                Donc à 25% de 4s la couleur de la div devient lightyellow, au bout de 2s elle devient lightgreen ainsi de suite... <br>
-                Info utile à savoir au bout des 100% elle affiche white pour ensuite elle affiche la couleur initiale ici white pour que l'effet soit plus sympas mais dans l'hypothèse ou la couleur initiale est autre que white la transition se ferrai sans delai.</p>
-                <pre><code class="language-css">
-                .losange{
-                    margin: 60px;
-                    background-color: white;
-                    height: 260px;
-                    width: 260px;
-                    transform: rotate(45deg);
-                    animation-name: losange_changing_colors;
-                    animation-duration: 4s;
-                }
-                @keyframes losange_changing_colors {
-                    0%  {background-color: lightgreen;}
-                    25%  {background-color: lightyellow;}
-                    50%  {background-color: lightgreen;}
-                    75%  {background-color: lightskyblue;}
-                    100% {background-color: white;}
-                }</code></pre>
-        </section>
+            <section class="code_lang">
 
-        <section class="code_lang">
-            <h2 class="title_GetEl"> Animer la forme d'une div </h2>
-            <div class="circle" id="circle"></div>
-            <h5>html</h5>
-            <pre><code class="language-html">&lt;div class="circle" id="circle">&lt;/div></code></pre>
-            <h5>css</h5>
-            <p>Le border-radius sert à arrondire les bors de la div qui dans son origine est carré.<br>
-            Le transition-timing-function en ease_in_out sert à lui faire comprendre que notre animation est fluide lors du survole et lorsque quitte le survole de l'élément.<br>
-            Le transition indique la durée de l'animation <br>
-            Le .circle:hover sert à indiquer ce qu'il doit faire lors du survole de la souris de l'élément.</p>
-            <pre><code class="language-css">
-            .circle{
-                margin: 40px;
-                background-color: lightsalmon;
-                height: 300px;
-                width: 300px;
-                border-radius: 50%;
-                transition-timing-function: ease-in-out;
-                transition: 2s;
-            }
-            .circle:hover{
-                width: 800px;
-                border-radius: 0;
-            }</code></pre>
-        </section>
+            
+                <h2 class="title_GetEl"> Animer la couleur d'une div </h2>
+                <h2 class="title_GetEl">Refresh the page</h2>
+                <div class="losange" id="losange"></div>
+                <h5>html</h5>
+                    <pre><code class="language-html">&lt;div class="losange">&lt;/div></code></pre>
+                    <h5>css</h5>
+                    <p>Le transform rotate sert à le changerr de position, c'est propriété est indépendant de l'animation car ce n'est pas une transition.
+                    Ici le keyframe losange_changing_colors est l'animation qui est appelée juste au dessus et chaque pourcentage s'applique à la durée qui est de 4s. <br>
+                    Donc à 25% de 4s la couleur de la div devient lightyellow, au bout de 2s elle devient lightgreen ainsi de suite... <br>
+                    Info utile à savoir au bout des 100% elle affiche white pour ensuite elle affiche la couleur initiale ici white pour que l'effet soit plus sympas mais dans l'hypothèse ou la couleur initiale est autre que white la transition se ferrai sans delai.</p>
+                    <pre><code class="language-css">
+                    .losange{
+                        margin: 60px;
+                        background-color: white;
+                        height: 260px;
+                        width: 260px;
+                        transform: rotate(45deg);
+                        animation-name: losange_changing_colors;
+                        animation-duration: 4s;
+                    }
+                    @keyframes losange_changing_colors {
+                        0%  {background-color: lightgreen;}
+                        25%  {background-color: lightyellow;}
+                        50%  {background-color: lightgreen;}
+                        75%  {background-color: lightskyblue;}
+                        100% {background-color: white;}
+                    }</code></pre>
+            </section>
+
+            <section class="code_lang">
+                <h2 class="title_GetEl"> Animer la forme d'une div </h2>
+                <div class="circle" id="circle"></div>
+                <h5>html</h5>
+                <pre><code class="language-html">&lt;div class="circle" id="circle">&lt;/div></code></pre>
+                <h5>css</h5>
+                <p>Le border-radius sert à arrondire les bors de la div qui dans son origine est carré.<br>
+                Le transition-timing-function en ease_in_out sert à lui faire comprendre que notre animation est fluide lors du survole et lorsque quitte le survole de l'élément.<br>
+                Le transition indique la durée de l'animation <br>
+                Le .circle:hover sert à indiquer ce qu'il doit faire lors du survole de la souris de l'élément.</p>
+                <pre><code class="language-css">
+                .circle{
+                    margin: 40px;
+                    background-color: lightsalmon;
+                    height: 300px;
+                    width: 300px;
+                    border-radius: 50%;
+                    transition-timing-function: ease-in-out;
+                    transition: 2s;
+                }
+                .circle:hover{
+                    width: 800px;
+                    border-radius: 0;
+                }</code></pre>
+            </section>
             <section class="code_lang">
 
             <h2 class="title_GetEl"> Faire une fonction JavaScript qui change l'image </h2>
-            <img class="img_lightgreen" id="img_lightgreen" src="img/img_lightgreen.jpg" alt="image with green abstrait art" onclick="change_img()">
-            <img class="img_lightpink" id="img_lightpink" src="img/img_lightpink.png" alt="image with pink abstrait art" onclick="change_img_back()">
+            <img class="img_lightgreen" id="img_lightgreen" src="img/img_lightgreen.jpg"
+                alt="image with green abstrait art" onclick="change_img()">
+            <img class="img_lightpink" id="img_lightpink" src="img/img_lightpink.png" alt="image with pink abstrait art"
+                onclick="change_img_back()">
             <h5>html</h5>
-            <p>J'ai mis dans ma balise onclick="change_img()" qui déclenche la fonction de mon fichier js qui est nommée change_img.
+            <p>J'ai mis dans ma balise onclick="change_img()" qui déclenche la fonction de mon fichier js qui est nommée
+                change_img.
             </p>
             <pre><code class="language-html"> 
                 &lt;p>&lt;img class="img_lightgreen" id="img_lightgreen" src="img/img_lightgreen.jpg" alt="image with green abstrait art" onclick="change_img()">
@@ -464,9 +523,12 @@ darkbutton.addEventListener('click', e=>{
                 display: none;
             }</code></pre>
             <h5>js</h5>
-            <p>Je créer d'abord deux variables qui vont chercher dans mon fichier html les éléments qui ont pour id respectifs img_lightpink et img_lightgreen. <br>
-            je créer une fonction change_img() qui va ajouter une balise style dans mon fichier html dans sa balise initiale. <br>
-            Donc je change le display de l'image que je veux cacher en none et le display de celle que je veux afficher en block.
+            <p>Je créer d'abord deux variables qui vont chercher dans mon fichier html les éléments qui ont pour id
+                respectifs img_lightpink et img_lightgreen. <br>
+                je créer une fonction change_img() qui va ajouter une balise style dans mon fichier html dans sa balise
+                initiale. <br>
+                Donc je change le display de l'image que je veux cacher en none et le display de celle que je veux
+                afficher en block.
             </p>
             <pre><code class="language-js"> 
                 var img_lightpink = document.getElementById("img_lightpink")
@@ -480,15 +542,16 @@ darkbutton.addEventListener('click', e=>{
                     img_lightpink.style.display = "none"
                     img_lightgreen.style.display = "block"
                 } </code></pre>
+            </div>
+        </section>
+
+        <!--------------------------------------- Fin Pierre ---------------------------------->
+
+
+        <script type="text/javascript" src="script.js"></script>
         </div>
-    </section>
-
-<!--------------------------------------- Fin Pierre ---------------------------------->
-
-
-    <script type="text/javascript" src="script.js"></script>
-</div>
 
 
 </body>
+
 </html>
