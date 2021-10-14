@@ -26,7 +26,7 @@ function Button3() {
   var x = document.getElementsByClassName("p_OnEstLa");
   x[0].innerHTML = "Hello World!";
 }
-function Button3() {
+function Button4() {
   document.querySelector(".example").style.backgroundColor = "red";
 }
 var darkmode = document.getElementById("darkmode")

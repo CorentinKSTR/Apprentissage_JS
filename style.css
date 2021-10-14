@@ -83,6 +83,9 @@ button{
 .txt_lorem button{
     margin-top: 20px;
 }
+.button{
+    width: auto;
+}
 .txt_lorem:hover{
     box-shadow: 2px 2px 4px black;
 }
