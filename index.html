@@ -78,7 +78,7 @@
         </code></pre>
 
     </section>
-
+    <!------------------------- Matis ------------------------------->
     <section class="code_lang">
 
         <h2 class="h2_matou"> Le QuerySelectAll !!!</h2>
@@ -93,7 +93,8 @@
             (dans notre cas des balises "li"), <br>
             pour leurs donner des instructions à l'aide d'un "for each". Ici, nous cherchons à créer 
             un effet hover sur les "ul li" de la nav bar.</p>
-        <pre><code class="language-js">var li = document.querySelectorAll("li")li.forEach((e)=>{
+        <pre><code class="language-js">js
+            var li = document.querySelectorAll("li")li.forEach((e)=>{
             e.addEventListener('mouseover', f => {
             e.classList.toggle("li-hover")
             })
@@ -115,14 +116,18 @@
             une nouvelle class dans la div darkmode (html) cette class est également assignée en CSS, cette nouvelle class sera supprimée de la div avec la fonction "toggle" après un nouveau clique sur le bouton Dark Mode.
             
         </p>
-        <pre><code class="language-js">var darkmode = document.getElementById("darkmode") 
+        <pre><code class="language-js">js
+            var darkmode = document.getElementById("darkmode") 
 var darkbutton = document.getElementById("darkbutton")
 darkbutton.addEventListener('click', e=>{
     darkmode.classList.toggle("darkmode")
 })</code></pre> 
-<pre><code class="language-html">&lt;div id="darkmode"> &lt;div></code></pre> 
-<pre><code class="language-html">&lt;div id="darkmode" class="darkmode"> &lt;div></code></pre> 
-<pre><code class="language-css">.darkmode{
+<pre><code class="language-html"> html 
+    &lt;div id="darkmode"> &lt;div></code></pre> 
+<pre><code class="language-html"> html 
+    &lt;div id="darkmode" class="darkmode"> &lt;div></code></pre> 
+<pre><code class="language-css"> css 
+    .darkmode{
     background-color: gray;
     color:cornsilk;}</code></pre> 
     
@@ -143,7 +148,8 @@ darkbutton.addEventListener('click', e=>{
                 Html
             </h5>
 
-            <pre><code class="language-html">
+            <pre><code class="language-html"> 
+                
                 &lt;div id="idimg">
                     &lt;img id="imagehover" src="img/jsimage.png">
                 &lt;/div>
