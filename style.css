@@ -206,6 +206,8 @@ color:blue
     color: white;
     background-color: black;
     align-items: center;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
 }
 .h2_matou{
     padding: 30px;
