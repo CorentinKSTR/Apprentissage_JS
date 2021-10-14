@@ -393,17 +393,19 @@ darkbutton.addEventListener('click', e=>{
         <!--------------------------------------- Fin Adam ---------------------------------->
 
 <!--------------------------------------- Pierre ---------------------------------->
-        <div class="pierro">
+        
             <section class="code_lang">
 
             
                 <h2 class="title_GetEl"> Animer la couleur d'une div </h2>
-                <h2 class="title_GetEl">Refresh the page</h2>
-                <div class="losange" id="losange"></div>
+                <p class="note_pierre">Refresh the page</p>
+                <div class="pierro_css_center">
+                    <div class="losange" id="losange"></div>
+                </div>
                 <h5>html</h5>
                     <pre><code class="language-html">&lt;div class="losange">&lt;/div></code></pre>
                     <h5>css</h5>
-                    <p>Le transform rotate sert à le changerr de position, c'est propriété est indépendant de l'animation car ce n'est pas une transition.
+                    <p class="p_lang">Le transform rotate sert à le changerr de position, c'est propriété est indépendant de l'animation car ce n'est pas une transition.
                     Ici le keyframe losange_changing_colors est l'animation qui est appelée juste au dessus et chaque pourcentage s'applique à la durée qui est de 4s. <br>
                     Donc à 25% de 4s la couleur de la div devient lightyellow, au bout de 2s elle devient lightgreen ainsi de suite... <br>
                     Info utile à savoir au bout des 100% elle affiche white pour ensuite elle affiche la couleur initiale ici white pour que l'effet soit plus sympas mais dans l'hypothèse ou la couleur initiale est autre que white la transition se ferrai sans delai.</p>
@@ -428,11 +430,13 @@ darkbutton.addEventListener('click', e=>{
 
             <section class="code_lang">
                 <h2 class="title_GetEl"> Animer la forme d'une div </h2>
-                <div class="circle" id="circle"></div>
+                <div class="pierro_css_center">
+                    <div class="circle" id="circle"></div>
+                </div>
                 <h5>html</h5>
                 <pre><code class="language-html">&lt;div class="circle" id="circle">&lt;/div></code></pre>
                 <h5>css</h5>
-                <p>Le border-radius sert à arrondire les bors de la div qui dans son origine est carré.<br>
+                <p class="p_lang">Le border-radius sert à arrondire les bors de la div qui dans son origine est carré.<br>
                 Le transition-timing-function en ease_in_out sert à lui faire comprendre que notre animation est fluide lors du survole et lorsque quitte le survole de l'élément.<br>
                 Le transition indique la durée de l'animation <br>
                 Le .circle:hover sert à indiquer ce qu'il doit faire lors du survole de la souris de l'élément.</p>
@@ -451,15 +455,18 @@ darkbutton.addEventListener('click', e=>{
                     border-radius: 0;
                 }</code></pre>
             </section>
-            <section class="code_lang">
+            
 
             <h2 class="title_GetEl"> Faire une fonction JavaScript qui change l'image </h2>
-            <img class="img_lightgreen" id="img_lightgreen" src="img/img_lightgreen.jpg"
-                alt="image with green abstrait art" onclick="change_img()">
-            <img class="img_lightpink" id="img_lightpink" src="img/img_lightpink.png" alt="image with pink abstrait art"
-                onclick="change_img_back()">
+            <div class="pierro_css_center">
+                <img class="img_lightgreen" id="img_lightgreen" src="img/img_lightgreen.jpg"
+                    alt="image with green abstrait art" onclick="change_img()">
+                <img class="img_lightpink" id="img_lightpink" src="img/img_lightpink.png" alt="image with pink abstrait art"
+                    onclick="change_img_back()">
+            </div>
+            <section class="code_lang">
             <h5>html</h5>
-            <p>J'ai mis dans ma balise onclick="change_img()" qui déclenche la fonction de mon fichier js qui est nommée
+            <p class="p_lang">J'ai mis dans ma balise onclick="change_img()" qui déclenche la fonction de mon fichier js qui est nommée
                 change_img.
             </p>
             <pre><code class="language-html"> 
@@ -475,7 +482,7 @@ darkbutton.addEventListener('click', e=>{
                 display: none;
             }</code></pre>
             <h5>js</h5>
-            <p>Je créer d'abord deux variables qui vont chercher dans mon fichier html les éléments qui ont pour id
+            <p class="p_lang">Je créer d'abord deux variables qui vont chercher dans mon fichier html les éléments qui ont pour id
                 respectifs img_lightpink et img_lightgreen. <br>
                 je créer une fonction change_img() qui va ajouter une balise style dans mon fichier html dans sa balise
                 initiale. <br>
@@ -494,7 +501,7 @@ darkbutton.addEventListener('click', e=>{
                     img_lightpink.style.display = "none"
                     img_lightgreen.style.display = "block"
                 } </code></pre>
-            </div>
+            
         </section>
 
         <!--------------------------------------- Fin Pierre ---------------------------------->

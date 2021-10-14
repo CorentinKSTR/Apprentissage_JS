@@ -110,6 +110,8 @@ button{
     border-radius: 50%;
     transition-timing-function: ease-in-out;
     transition: 2s;
+    margin-left: auto;
+    margin-right: auto;
 }
 .circle:hover{
     width: 800px;
@@ -124,6 +126,8 @@ button{
     transform: rotate(45deg);
     animation-name: losange_changing_colors;
     animation-duration: 4s;
+    margin-left: auto;
+    margin-right: auto;
 }
 @keyframes losange_changing_colors {
     0%  {background-color: lightgreen;}
@@ -132,9 +136,14 @@ button{
     75%  {background-color: lightskyblue;}
     100% {background-color: white;}
 }
+.pierro_css_center{
+    text-align: center;
+}
 .img_lightgreen, .img_lightpink{
     height: 500px;
     width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .img_lightpink{
     display: none;
@@ -259,4 +268,10 @@ color:blue
     padding: 24px;
     font-family: sans-serif;
 }
-
+.note_pierre{
+    text-align: center;
+}
+.p_lang{
+    max-width: 75%;
+    margin: auto;
+}
