@@ -254,4 +254,10 @@ color:blue
     width: 300px;
 }
 
+.pierro{
+    max-width: 80%;
+    margin: auto;
+    padding: 24px;
+    font-family: sans-serif;
+}
 
